@@ -1,6 +1,8 @@
 #!/usr/bin/python
 from flask import FLask
 
-@app.route('/', methods=['POST'])
-def processing():
-  return '248551e0'
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello from Flask!'
